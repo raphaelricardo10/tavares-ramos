@@ -1,0 +1,41 @@
+.form {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fd992d;
+}
+
+.form input {
+    margin-bottom: .5rem;
+    max-width: 80%;
+}
+
+.form select{
+    max-width: 80%;
+}
+
+.form label, option, select {
+    font-size: 1rem;
+}
+
+.form select {
+    min-width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    border: none;
+    margin-bottom: .5rem;
+}
+
+.form button {
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+    padding: 0px;
+}
+
+@media all and (min-width: 768px){
+    .container-form {
+        padding: 20px 17%;
+    }
+    .form select{
+        min-width: 80%;
+    }
+}

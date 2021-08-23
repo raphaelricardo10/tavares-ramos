@@ -1,0 +1,8 @@
+#container-img img{
+    max-height: 400px;
+}
+
+#container-credit a{
+    font-size: 0.75rem;
+    color:black;
+}

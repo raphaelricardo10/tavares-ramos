@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteCond %{REQUEST_URI} ^/includes/.*$
+RewriteRule .*? - [F]
+
+RewriteCond %{REQUEST_URI} ^/mjml/.*$
+RewriteRule .*? - [F]
+
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+RewriteCond %{HTTP_HOST} ^tavaresramos.com.br
+RewriteRule (.*) https://www.tavaresramos.com.br/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/profissao.php
+RewriteCond %{QUERY_STRING} ^?id=([a-zA-Z]+)$
+RewriteRule ^(.*)$ /profissao/%1? [R,L]
+
+ErrorDocument 404 /errors/404_redirect
+.php
+ErrorDocument 403 /errors/403_redirect.php

@@ -1,0 +1,31 @@
+<mjml>
+  <mj-body>
+    <mj-section background-color="#fd992d" padding="20px" padding-bottom="0px">
+      <mj-column background-color="#f8f8f8">
+        <mj-table>
+          <tr>
+            <td width="50px">
+              <img width="50px" src="https://tavaresramos.com.br/img/logo-header.png" />
+            </td>
+            <td vertical-align="middle">
+              <h4 id="company-name" style="margin-left:10px; font-family:Arial, Helvetica, sans-serif">
+                Tavares Ramos - Prestação de Serviços
+              </h4>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fd992d" padding="20px" padding-top="0px">
+      <mj-column background-color="#f8f8f8" padding="40px" padding-top="0px">
+        <mj-raw>
+          <h3 id="title" style="color:#000000;"> Prezado(a)
+            <?php echo $name ?>, agradecemos seu contato. </h3>
+          <p id="paragraph" style="color:#000000">Vamos analisar sua solicitação e lhe responderemos assim que possível.<br>
+            Caso seja necessário, você também pode acrescentar mais informações respondendo a este email.<br>
+          </p>
+        </mj-raw>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

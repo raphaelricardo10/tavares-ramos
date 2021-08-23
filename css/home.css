@@ -1,0 +1,122 @@
+h1 {
+    font-size: 1.5rem;
+}
+
+.container-body {
+    padding: 0px;
+}
+
+#banner-home img {
+    max-height: 500px;
+    height: auto;
+}
+
+#container-services {
+    background-color: #fd992d;
+    padding: 10px;
+}
+
+#container-services button {
+    height: 30px;
+    width: 150px;
+    margin: 10px;
+    padding: 0px;
+}
+
+#container-services-title {
+    margin: 0px 5%;
+    border-bottom: groove #fd992d;
+}
+
+#container-services-title h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#container-services-subtitle h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.services-service {
+    background-color: grey;
+    margin: 10px;
+}
+
+.services-service h1 {
+    color: #fd992d;
+    justify-content: center;
+    display: grid;
+    align-content: center;
+    text-shadow: 1px 1px 3px black;
+    font-weight: 900;
+    margin: 5%;
+}
+
+.services-service p {
+    margin: 10px;
+    color: white;
+}
+
+.services-service img {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.services-service-description {
+    background-color: #4D4444;
+}
+
+.services-service-btn-container {
+    background-color: #4D4444;
+}
+
+.row-first-service {
+    margin-top: 10px;
+}
+
+#container-services-contact h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#container-services-contact div {
+    height: calc(10vw);
+    max-height: 80px;
+}
+
+#container-services-contact button {
+    height: 50%;
+    width: 17%;
+    min-height: 30px;
+    min-width: 150px;
+    max-height: 40px;
+    max-width: 200px;
+}
+
+#services {
+    margin: 10px 0px;
+}
+
+@media all and (max-width: 720px) {
+    .services-service {
+        margin-bottom: 0px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}
+
+@media all and (min-width: 720px) {
+
+    .row-first-service,
+    .row-last-service {
+        margin: auto 0px;
+    }
+
+    .first-row,
+    .last-row {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
