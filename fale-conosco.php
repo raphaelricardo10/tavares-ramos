@@ -38,7 +38,7 @@
         <?php
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 if(sendMailToServer($_POST, sprintf('Solicitação de contato por %s %s', $_POST['name'], $_POST['surname']), './includes/emails/contatoServer.php')){
-                    sendMailToClient($_POST, './mjml/contato.php');
+                    sendMailToClient($_POST, './includes/emails/contato.php');
                 }
                 else{
                     echo 'Erro ao enviar o email.<br>Tente novamente mais tarde.';

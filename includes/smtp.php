@@ -1,8 +1,11 @@
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require './includes/PHPMailer/src/Exception.php';
+require './includes/PHPMailer/src/PHPMailer.php';
+require './includes/PHPMailer/src/SMTP.php';
 
 function get_include_contents($filename, $variablesToMakeLocal)
 {
