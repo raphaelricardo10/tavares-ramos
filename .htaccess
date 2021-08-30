@@ -18,5 +18,5 @@ RewriteCond %{REQUEST_URI} ^/profissao.php
 RewriteCond %{QUERY_STRING} ^?id=([a-zA-Z]+)$
 RewriteRule ^(.*)$ /profissao/%1? [R,L]
 
-ErrorDocument 404 /errors/404_redirect.php
+#ErrorDocument 404 /errors/404_redirect.php
 ErrorDocument 403 /errors/403_redirect.php
