@@ -9,13 +9,11 @@
     max-width: 80%;
 }
 
-.form select {
+.form select{
     max-width: 80%;
 }
 
-.form label,
-option,
-select {
+.form label, option, select {
     font-size: 1rem;
 }
 
@@ -33,12 +31,11 @@ select {
     padding: 0px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px){
     .container-form {
         padding: 20px 17%;
     }
-
-    .form select {
+    .form select{
         min-width: 80%;
     }
 }

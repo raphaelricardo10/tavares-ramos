@@ -21,6 +21,12 @@
         <input type="text" class="form-control" id="email" name="email" pattern="^[a-z0-9.]+@[a-z0-9]+(\.[a-z]+)+$" title="Insira um e-mail válido" oninvalid="setCustomValidity('Insira um e-mail válido')" required>
         <label for="phone" class="form-label">Telefone:</label>
         <input type="tel" class="form-control" id="phone" name="phone" pattern="^\([0-9]{2}\)[\s]?[9]?[0-9]{4}-[0-9]{4}$" title="Insira um número de telefone válido" onfocus="formatPhone(this)" oninvalid="setCustomValidity('Insira um número de telefone válido')" required>
+        <label for="subject">Serviço:</label>
+        <select id="subject" name="subject" class="d-flex flex-row">
+            <option></option>
+            <?php sqlListProfessionals('option', '', false)?>
+            <option>Outro</option>
+        </select>
         <label for="msg" class="form-label">Mensagem:</label>
         <textarea class="form-control" rows="5" id="msg" name="msg" style="resize:none;" required></textarea>
         <div class="d-flex flex-row w-100 align-items-center justify-content-center">
