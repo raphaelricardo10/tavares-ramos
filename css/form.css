@@ -33,7 +33,7 @@
 
 @media all and (min-width: 768px){
     .container-form {
-        padding: 20px 17%;
+        max-width: 500px;
     }
     .form select{
         min-width: 80%;
