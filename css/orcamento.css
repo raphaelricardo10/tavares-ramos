@@ -1,0 +1,11 @@
+#whatsapp-container img{
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+    
+#whatsapp-container a{
+    color: #1bd741;
+    font-weight: bold;
+    text-decoration-line: underline;
+}

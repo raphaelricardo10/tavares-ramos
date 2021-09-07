@@ -13,6 +13,11 @@
             do serviço a ser realizado e lhe responderemos via e-mail.</h2>
         <h2>Ou se preferir, entre em contato conosco através do WhatsApp:</h2>
 
+        <div id="whatsapp-container" class="d-flex flex-row align-items-center justify-content-center">
+            <img src="./img/whatsapp.svg">
+            <a href="https://api.whatsapp.com/send?phone=5521979869446">(21) 97986-9446</a>
+        </div>
+
         <form name="form" id="form" action="#" onsubmit="return validateForm()" class="form d-flex flex-column">
             <label for="name" class="form-label">Nome:</label>
             <input type="text" class="form-control" id="name" name="name" required>
