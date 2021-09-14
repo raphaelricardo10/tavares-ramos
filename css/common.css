@@ -26,6 +26,7 @@ h2 {
 .navbar-brand img {
     max-height: 100px;
     max-width: 100px;
+    margin-right: 10px;
 }
 
 .container-body {

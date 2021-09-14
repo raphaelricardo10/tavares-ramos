@@ -8,7 +8,13 @@
     <div id="banner-home" class="d-flex flex-column carousel h-100" data-ride="carousel">
         <div class="carousel-inner bg-secondary w-100" role="listbox">
             <div class="carousel-item active d-flex justify-content-center">
-                <img class="img-fluid responsive" src="./img/banner-home.png" alt="banner">
+                <img sizes="(max-width: 1140px) 100vw, 1140px" srcset="
+                    ./img/banner-home_auvmy6_c_scale,w_360.png 360w,
+                    ./img/banner-home_auvmy6_c_scale,w_624.png 624w,
+                    ./img/banner-home_auvmy6_c_scale,w_818.png 818w,
+                    ./img/banner-home_auvmy6_c_scale,w_993.png 993w,
+                    ./img/banner-home_auvmy6_c_scale,w_1140.png 1140w"
+                    src="./img/banner-home_auvmy6_c_scale,w_1140.png" alt="banner">
             </div>
         </div>
     </div>

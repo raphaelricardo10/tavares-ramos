@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Ramos Serviços</title>
 
-    <?php require_once './includes/sql.php'; ?>
+    <?php include './includes/sql.php'; ?>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -31,6 +31,7 @@
     <script src="../js/scripts.js"></script>
 
     <header>
+        <?php sql_connect() ?>
         <div class="header d-flex container-header">
             <nav class="navbar navbar-expand-md navbar-light w-100">
                 <a class="navbar-brand align-items-center m-0" href="./">
