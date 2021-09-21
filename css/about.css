@@ -1,0 +1,42 @@
+main > div{
+    margin-bottom: 20px;
+}
+
+#text-container{
+    margin-right: 20px;
+}
+
+#text-container p{
+    text-align: justify;
+}
+
+#servicos-carousel{
+    margin: auto;
+}
+
+#mvv-container h2{
+    border-bottom: 2px solid #fd992d;
+    width: 100%;
+    text-align: center;
+    font-size: 125%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#vision-container{
+    margin: 0px 20px;
+}
+
+#depos-container h1{
+    text-transform: uppercase;
+    font-size: 150%;
+}
+
+.quote-container{
+    margin-bottom: 10px;
+}
+
+.quote{
+    quotes: "\201C" "\201D";
+}
