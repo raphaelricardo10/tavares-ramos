@@ -6,20 +6,12 @@
     <h1>Sobre nós</h1>
     <div class="d-flex flex-row">
         <div id="text-container" class="d-flex flex-column w-100">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,
-                pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.
-                Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex,
-                in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut
-                vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
-                Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat
-                faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc.
-                Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis.
-                Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus,
-                non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus</p>
+            <p>A Tavares Ramos é uma empresa de terceirização de serviços que atua em diferentes áreas e preza pela satisfação do cliente. Sabemos que contratar um profissional pode ser uma tarefa difícil e que exige muita dedicação para garantir que ele seja capaz de executar o serviço da maneira mais adequada. Nossos profissionais passam por um processo que avalia diversas qualidades, como: interação com o cliente, capacidade de reproduzir o que foi solicitado e fidelidade aos prazos.</p>
+            <p>Nós equipamos nossos profissionais com ferramentas e maquinários modernos que permitem maior agilidade na realização do serviço e melhor acabamento, além de padronizar o serviço prestado por diferentes profissionais. Nós também possuímos uma forte cultura de segurança do trabalho, onde orientamos todos os nossos colaboradores a utilizarem os devidos equipamentos de proteção individual e a seguirem nossas diretivas de prevenção de acidentes.</p>
+            <p>Entendemos que algo pode não sair como esperado e por isso, nossos clientes ainda contam com uma equipe de atendimento pronta para resolver quaisquer problemas que venham a ocorrer durante e após a prestação dos serviços. Nessas situações, nossas prioridade é garantir que a solicitação seja atendida e que o cliente continue satisfeito com nossa prestação de serviços.</p>
         </div>
 
-        <div id="servicos-caroussel" class="carousel slide d-flex flex-column w-100" data-ride="carousel">
+        <div id="servicos-carousel" class="carousel slide d-flex flex-column w-100" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="./img/servicos/img1.jpg" alt="Armário">
@@ -31,11 +23,11 @@
                     <img class="d-block w-100" src="./img/servicos/img3.jpg" alt="Armário">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#servicos-caroussel" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#servicos-carousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#servicos-caroussel" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#servicos-carousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -44,19 +36,15 @@
     <div id="mvv-container" class="d-flex flex-row">
         <div class="d-flex flex-column w-100 align-items-center">
             <h2>Missão</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nibh at urna ullamcorper interdum et a tellus. Integer ut dignissim ex. Cras et sollicitudin nibh. Duis efficitur arcu at orci maximus, in pretium dui imperdiet. Quisque vel rhoncus velit, vitae pharetra nibh. Morbi eget ligula non elit tincidunt sagittis in id velit. Aliquam erat volutpat. Praesent bibendum dapibus tellus. Sed faucibus ipsum enim, vitae congue diam tristique eget. Sed sed semper nunc. Maecenas quam libero, ultrices eu tempus a, porttitor eu libero. Curabitur eleifend bibendum tristique. Nam tincidunt, nulla ac commodo tincidunt, ipsum erat maximus mi, sed lobortis metus neque eget mauris.</p>
+            <p>Permitir que as pessoas contratem profissionais em diferentes áreas com mais facilidade, sem que elas se precisem se preocupar em como escolher o prestador de serviços ideal para suas necessidades.</p>
         </div>
         <div id="vision-container" class="d-flex flex-column w-100 align-items-center">
             <h2>Visão</h2>
-            <p>
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec et ligula ac elit sollicitudin tincidunt. Donec magna risus, sollicitudin in efficitur et, pharetra vel ex. Duis at nisl vestibulum, vulputate arcu a, imperdiet nunc. Mauris odio nisi, efficitur et pulvinar nec, porta a nisi. Vestibulum suscipit, massa eu interdum blandit, metus magna tempus nisi, non venenatis dui nibh non elit. Aenean ultrices venenatis nunc ac tincidunt. Donec sed mauris ante. Praesent et orci nec ipsum laoreet volutpat. Praesent pulvinar dolor eu augue ultricies, tempor vestibulum augue faucibus.
-            </p>
+            <p>Ser referência nacional na área de terceirização de serviços e gerar um impacto positivo na sociedade com nossas facilidades propostas.</p>
         </div>
         <div class="d-flex flex-column w-100 align-items-center">
             <h2>Valores</h2>
-            <p>
-                Ut venenatis metus ex, in congue erat feugiat quis. Donec vel gravida massa. Sed ultrices eget quam id porta. Ut feugiat dui vitae elit hendrerit, id rutrum nibh dignissim. Vestibulum dapibus risus ac imperdiet sagittis. Proin luctus nisi ac enim fermentum fringilla. Curabitur hendrerit ornare leo, non tristique nibh dictum non.
-            </p>
+            <p>Responsabilidade com nossos clientes, segurança no trabalho, facilitar a prestação de serviços, responsabilidade com o meio ambiente.</p>
         </div>
     </div>
     <div id="depos-container" class="d-flex flex-column align-items-center">

@@ -6,7 +6,11 @@ main > div{
     margin-right: 20px;
 }
 
-#servicos-caroussel{
+#text-container p{
+    text-align: justify;
+}
+
+#servicos-carousel{
     margin: auto;
 }
 
