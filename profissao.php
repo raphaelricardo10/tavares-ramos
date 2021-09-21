@@ -1,8 +1,19 @@
 <?php
 include './includes/header.php';
-include './includes/smtp.php';
+require_once './includes/smtp.php';
 $professional = sqlGetProfessional();
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if ($_POST['other']) {
+        $_POST['subject'] = $_POST['other'];
+    }
+    try {
+        sendMailToServer($_POST, sprintf('Solicitação de orçamento por %s %s', $_POST['name'], $_POST['surname']), './includes/emails/orcamentoServer.php');
+        sendMailToClient($_POST, './includes/emails/contato.php');
+    } catch (Exception $e) {
+        echo 'Erro ao tentar enviar o email<br>Tente novamente mais tarde.';
+    }
+}
 ?>
 
 <script src="./js/form.js" async></script>
@@ -17,7 +28,7 @@ $professional = sqlGetProfessional();
     <ul><?php echo $professional["services"] ?></ul>
     <h2>Se interessou pelo serviço?</h2>
     <h3>Realize um orçamento agora mesmo!</h3>
-    <form name="form" id="form" action="/profissao?id=<?php echo $professional['link'] ?>" onsubmit="return validateForm()" class="form d-flex flex-column" method="POST">
+    <form name="form" id="form" action="/profissao?id=<?php echo $professional['link'] ?>" onsubmit="return validateField()" class="form d-flex flex-column" method="POST">
         <label for="name" class="form-label">Nome:</label>
         <input type="text" class="form-control" id="name" name="name" required>
         <label for="surname" class="form-label">Sobrenome:</label>
@@ -33,18 +44,7 @@ $professional = sqlGetProfessional();
         </div>
     </form>
 
-    <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        var_dump($_POST);
-        $_POST['subject'] = $professional['name'];
-        echo $_POST['subject'];
-        if (sendMailToServer($_POST, sprintf('Solicitação de contato por %s %s', $_POST['name'], $_POST['surname']), './includes/emails/orcamentoServer.php', 1)) {
-            sendMailToClient($_POST, './includes/emails/contato.php');
-        } else {
-            echo 'Erro ao enviar o email.<br>Tente novamente mais tarde.';
-        }
-    }
-    ?>
+
 </main>
 
 <?php include './includes/footer.html' ?>
