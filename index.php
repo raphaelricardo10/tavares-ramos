@@ -8,7 +8,13 @@
     <div id="banner-home" class="d-flex flex-column carousel h-100" data-ride="carousel">
         <div class="carousel-inner bg-secondary w-100" role="listbox">
             <div class="carousel-item active d-flex justify-content-center">
-                <img class="img-fluid responsive" src="./img/banner-home.png" alt="banner">
+                <img sizes="(max-width: 1140px) 100vw, 1140px" srcset="
+                    ./img/banner-home_auvmy6_c_scale,w_360.png 360w,
+                    ./img/banner-home_auvmy6_c_scale,w_624.png 624w,
+                    ./img/banner-home_auvmy6_c_scale,w_818.png 818w,
+                    ./img/banner-home_auvmy6_c_scale,w_993.png 993w,
+                    ./img/banner-home_auvmy6_c_scale,w_1140.png 1140w"
+                    src="./img/banner-home_auvmy6_c_scale,w_1140.png" alt="banner">
             </div>
         </div>
     </div>
@@ -37,7 +43,7 @@
                             e revestir paredes, pisos, vigas, lajes, telhados e outros serviços.</p>
                     </div>
                     <div class="services-service-btn-container d-flex flex-row w-100 align-items-center justify-content-center">
-                        <button class="btn btn-primary" href="./servicos/pedreiro.html" role="button">Saiba mais</button>
+                        <button class="btn btn-primary" onclick="location.href='./profissao?id=pedreiro';" role="button">Saiba mais</button>
                     </div>
                 </div>
                 <div class="first-row services-service d-flex flex-column w-100 align-items-center">
@@ -51,7 +57,7 @@
                             tanto em casa quanto em grandes edifícios.</p>
                     </div>
                     <div class="services-service-btn-container d-flex flex-row w-100 align-items-center justify-content-center">
-                        <button class="btn btn-primary" href="./servicos/pintor.html" role="button">Saiba mais</button>
+                        <button class="btn btn-primary" onclick="location.href='./profissao?id=pintor';" role="button">Saiba mais</button>
                     </div>
                 </div>
                 <div class="first-row services-service row-last-service d-flex flex-column w-100 align-items-center">
@@ -66,7 +72,7 @@
                             torneiras, chuveiros e afins.</p>
                     </div>
                     <div class="services-service-btn-container d-flex flex-row w-100 align-items-center justify-content-center">
-                        <button class="btn btn-primary" href="./servicos/bombeiro-hidraulico.html" role="button">Saiba mais</button>
+                        <button class="btn btn-primary" onclick="location.href='./profissao?id=bomb-hidraulico';"role="button">Saiba mais</button>
                     </div>
                 </div>
             </div>
@@ -86,7 +92,7 @@
                         </p>
                     </div>
                     <div class="services-service-btn-container d-flex flex-row w-100 align-items-center justify-content-center">
-                        <button class="btn btn-primary" onclick="location.href = './profissao?id=marcenaria'" role="button">Saiba
+                        <button class="btn btn-primary" onclick="location.href='./profissao?id=marceneiro';" role="button">Saiba
                             mais</a>
                     </div>
                 </div>
@@ -101,7 +107,7 @@
                             penduradores de banheiro, purificadores de água e afins.</p>
                     </div>
                     <div class="services-service-btn-container d-flex flex-row w-100 align-items-center justify-content-center">
-                        <button class="btn btn-primary" href="./servicos/montador.html" role="button">Saiba mais</button>
+                        <button class="btn btn-primary" onclick="location.href='./profissao?id=montador';" role="button">Saiba mais</button>
                     </div>
                 </div>
                 <div class="services-service row-last-service d-flex flex-column w-100 align-items-center">
@@ -115,7 +121,7 @@
                             posicionar pontos de luz e executar o projeto.</p>
                     </div>
                     <div class="services-service-btn-container d-flex flex-row w-100 align-items-center justify-content-center">
-                        <button class="btn btn-primary" href="./servicos/eletricista.html" role="button">Saiba
+                        <button class="btn btn-primary" onclick="location.href='./profissao?id=eletricista';" role="button">Saiba
                             mais</a>
                     </div>
                 </div>
@@ -134,7 +140,7 @@
                             componentes como ferro e aço.</p>
                     </div>
                     <div class="services-service-btn-container d-flex flex-row w-100 align-items-center justify-content-center">
-                        <button class="btn btn-primary" href="./servicos/serralheiro.html" role="button">Saiba
+                        <button class="btn btn-primary" onclick="location.href='./profissao?id=serralheiro';" role="button">Saiba
                             mais</a>
                     </div>
                 </div>
@@ -149,7 +155,7 @@
                             independentemente do ambiente de instalação.</p>
                     </div>
                     <div class="services-service-btn-container d-flex flex-row w-100 align-items-center justify-content-center">
-                        <button class="btn btn-primary" href="./servicos/vidraceiro.html" role="button">Saiba
+                        <button class="btn btn-primary" onclick="location.href='./profissao?id=vidraceiro';" role="button">Saiba
                             mais</a>
                     </div>
                 </div>
@@ -166,7 +172,7 @@
                         </p>
                     </div>
                     <div class="services-service-btn-container d-flex flex-row w-100 align-items-center justify-content-center">
-                        <button class="btn btn-primary" href="./servicos/tecnico-de-informatica.html" role="button">Saiba mais</button>
+                        <button class="btn btn-primary" onclick="location.href='./profissao?id=tec-informatica';" role="button">Saiba mais</button>
                     </div>
                 </div>
             </div>
@@ -176,7 +182,7 @@
             <h2>Não encontrou o que procura? Entre em contato conosco através do link abaixo
                 e informe o serviço solicitado:</h2>
             <div class="d-flex flex-row w-100 align-items-center justify-content-center">
-                <button class="btn btn-primary" href="./orcamento" role="button">Orçamento</button>
+                <button class="btn btn-primary" onclick="location.href='./orcamento';" role="button">Orçamento</button>
             </div>
         </div>
 </main>
