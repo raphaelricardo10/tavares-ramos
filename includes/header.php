@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Ramos Serviços</title>
+    <title>Tavares Ramos - Prestação de Serviços</title>
 
     <?php require_once './includes/sql.php'; ?>
     <!-- Bootstrap -->
@@ -31,6 +31,7 @@
     <script src="../js/scripts.js"></script>
 
     <header>
+        <?php sql_connect() ?>
         <div class="header d-flex container-header">
             <nav class="navbar navbar-expand-md navbar-light w-100">
                 <a class="navbar-brand align-items-center m-0" href="./">
