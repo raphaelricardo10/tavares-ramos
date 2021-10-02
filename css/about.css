@@ -28,7 +28,7 @@ main > div{
     margin: 0px 20px;
 }
 
-#depos-container h1{
+.section-container h1{
     text-transform: uppercase;
     font-size: 150%;
 }
